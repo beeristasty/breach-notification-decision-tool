@@ -65,12 +65,9 @@ changes in the underlying law.
 ---
 
 
-## Screenshots
+## Screenshot:
 
-**Example 1: Python Command**
-![Python Command](screenshots/example_python_command.png)
-
-**Example 2: Python Command and one state output**
+**Example: Python Command and one state output**
 ![Python Command and one state outpu](screenshots/example_python_command_and_1_state_output.png)
 
 
