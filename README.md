@@ -70,10 +70,7 @@ changes in the underlying law.
 **Example 1: Python Command**
 ![Python Command](screenshots/example_python_command.png)
 
-**Example 2: Four state output**
-![Four state output](screenshots/example_output_4_states.png)
-
-**Example 3: Python Command and one state output**
+**Example 2: Python Command and one state output**
 ![Python Command and one state outpu](screenshots/example_python_command_and_1_state_output.png)
 
 
