@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "disclaimer": "This dataset is for educational/portfolio purposes only. Not legal advice. Verify against current statutory text before relying on it.",
+  "states": [
+    {
+      "state_code": "CA",
+      "state_name": "California",
+      "statute_citation": "Cal. Civ. Code § 1798.82",
+      "last_verified": "2026-09-27",
+      "personal_information_elements": [
+        "ssn",
+        "drivers_license_or_state_id",
+        "financial_account_number_with_access_code",
+        "medical_information",
+        "health_insurance_information",
+        "biometric_data",
+        "username_or_email_with_password_or_security_qa"
+      ],
+      "encryption_safe_harbor": {
+        "applies": true,
+        "conditions": "Safe harbor applies if the encryption key/credential was not also compromised."
+      },
+      "notification_trigger_threshold": {
+        "min_residents_affected": 0,
+        "notes": "No minimum threshold for individual notice; triggered per any CA resident affected."
+      },
+      "notification_deadline": {
+        "type": "reasonable_time",
+        "fixed_days": null,
+        "notes": "Notice must be made 'in the most expedient time possible and without unreasonable delay.'"
+      },
+      "attorney_general_notification": {
+        "required": true,
+        "threshold_residents": 500,
+        "notes": "Required if more than 500 CA residents are notified as a result of a single breach."
+      },
+      "credit_bureau_notification": {
+        "required": true,
+        "threshold_residents": 500
+      },
+      "substitute_notice_allowed": true,
+      "substitute_notice_conditions": "Available if cost exceeds $250,000, affected class exceeds 500,000, or insufficient contact info exists."
+    },
+    {
+      "state_code": "NY",
+      "state_name": "New York",
+      "statute_citation": "N.Y. Gen. Bus. Law §§ 899-aa, 899-bb (SHIELD Act)",
+      "last_verified": "2026-09-27",
+      "personal_information_elements": [
+        "ssn",
+        "drivers_license_or_state_id",
+        "financial_account_number_with_access_code",
+        "biometric_data",
+        "username_or_email_with_password_or_security_qa"
+      ],
+      "encryption_safe_harbor": {
+        "applies": true,
+        "conditions": "Safe harbor applies unless the encryption key was also acquired and the entity reasonably believes it could render data readable."
+      },
+      "notification_trigger_threshold": {
+        "min_residents_affected": 0,
+        "notes": "No minimum threshold for individual notice."
+      },
+      "notification_deadline": {
+        "type": "reasonable_time",
+        "fixed_days": null,
+        "notes": "'Most expedient time possible and without unreasonable delay.'"
+      },
+      "attorney_general_notification": {
+        "required": true,
+        "threshold_residents": 500,
+        "notes": "Also requires notice to NY Dept of State and NY State Police if over 500 residents affected."
+      },
+      "credit_bureau_notification": {
+        "required": true,
+        "threshold_residents": 5000
+      },
+      "substitute_notice_allowed": true,
+      "substitute_notice_conditions": "Available if cost exceeds $250,000, affected class exceeds 500,000, or insufficient contact info exists."
+    },
+    {
+      "state_code": "TX",
+      "state_name": "Texas",
+      "statute_citation": "Tex. Bus. & Com. Code § 521.053",
+      "last_verified": "2026-09-27",
+      "personal_information_elements": [
+        "ssn",
+        "drivers_license_or_state_id",
+        "financial_account_number_with_access_code",
+        "biometric_data",
+        "health_information",
+        "username_or_email_with_password_or_security_qa"
+      ],
+      "encryption_safe_harbor": {
+        "applies": true,
+        "conditions": "Safe harbor applies unless encryption key was also compromised."
+      },
+      "notification_trigger_threshold": {
+        "min_residents_affected": 0,
+        "notes": "No minimum threshold for individual notice."
+      },
+      "notification_deadline": {
+        "type": "fixed_days",
+        "fixed_days": 60,
+        "notes": "Notice required as soon as practicable, but no later than 60 days after determining a breach occurred."
+      },
+      "attorney_general_notification": {
+        "required": true,
+        "threshold_residents": 250,
+        "notes": "Required if more than 250 TX residents affected; must include specific statutory content."
+      },
+      "credit_bureau_notification": {
+        "required": true,
+        "threshold_residents": 10000
+      },
+      "substitute_notice_allowed": true,
+      "substitute_notice_conditions": "Available if cost exceeds $250,000, affected class exceeds 500,000, or insufficient contact info exists."
+    },
+    {
+      "state_code": "AR",
+      "state_name": "Arkansas",
+      "statute_citation": "Ark. Code Ann. § 4-110-101 et seq. (Personal Information Protection Act)",
+      "last_verified": "2026-09-27",
+      "personal_information_elements": [
+        "ssn",
+        "drivers_license_or_state_id",
+        "financial_account_number_with_access_code",
+        "medical_information",
+        "biometric_data"
+      ],
+      "encryption_safe_harbor": {
+        "applies": true,
+        "conditions": "Safe harbor applies unless encryption key was also compromised."
+      },
+      "notification_trigger_threshold": {
+        "min_residents_affected": 0,
+        "notes": "Triggered only if breach creates reasonable likelihood of harm to affected individuals (risk-of-harm analysis)."
+      },
+      "notification_deadline": {
+        "type": "fixed_days",
+        "fixed_days": 45,
+        "notes": "Notice required 'in the most expedient time possible,' no later than 45 days after determining breach occurred."
+      },
+      "attorney_general_notification": {
+        "required": true,
+        "threshold_residents": 1000,
+        "notes": "Required if more than 1,000 residents affected."
+      },
+      "credit_bureau_notification": {
+        "required": false,
+        "threshold_residents": null
+      },
+      "substitute_notice_allowed": true,
+      "substitute_notice_conditions": "Available if cost exceeds $250,000, affected class exceeds 500,000, or insufficient contact info exists."
+    }
+  ]
+}
